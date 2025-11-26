@@ -21,8 +21,7 @@ Based on the analysis of this repository, the following GitHub topics are recomm
 | Topic | Reason |
 |-------|--------|
 | `pillow` | Uses Pillow for image processing |
-| `google-apis` | Integration with Google services |
-| `gkeepapi` | Google Keep API integration |
+| `google-apis` | Integration with Google services (gkeepapi, gpsoauth) |
 | `homebrew` | Homebrew tap auditing script |
 
 ### DevOps/Infrastructure Topics
