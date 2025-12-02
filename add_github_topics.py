@@ -15,12 +15,8 @@ import json
 import os
 import sys
 import argparse
-try:
-    import urllib.request
-    import urllib.error
-except ImportError:
-    print("Error: urllib is not available")
-    sys.exit(1)
+import urllib.request
+import urllib.error
 
 
 # Recommended topics for this repository

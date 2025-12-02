@@ -56,7 +56,7 @@ method_gh_cli() {
     echo "Using GitHub CLI to set topics..."
     gh api --method PUT "/repos/$REPO_OWNER/$REPO_NAME/topics" \
         -H "Accept: application/vnd.github+json" \
-        -f names="$TOPICS_JSON"
+        -F names="$TOPICS_JSON"
     
     if [ $? -eq 0 ]; then
         echo "✓ Topics set successfully using gh CLI!"
