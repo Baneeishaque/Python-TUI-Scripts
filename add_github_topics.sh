@@ -55,7 +55,7 @@ method_gh_cli() {
     
     echo "Using GitHub CLI to set topics..."
     gh api --method PUT "/repos/$REPO_OWNER/$REPO_NAME/topics" \
-        -H "Accept: application/vnd.github.mercy-preview+json" \
+        -H "Accept: application/vnd.github+json" \
         -f names="$TOPICS_JSON"
     
     if [ $? -eq 0 ]; then
@@ -91,7 +91,7 @@ method_curl() {
     echo "Using curl to set topics..."
     
     RESPONSE=$(curl -s -X PUT \
-        -H "Accept: application/vnd.github.mercy-preview+json" \
+        -H "Accept: application/vnd.github+json" \
         -H "Authorization: token $GITHUB_TOKEN" \
         -H "Content-Type: application/json" \
         -d "{\"names\": $TOPICS_JSON}" \

@@ -56,7 +56,7 @@ def get_current_topics(token):
     url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/topics"
     
     headers = {
-        "Accept": "application/vnd.github.mercy-preview+json",
+        "Accept": "application/vnd.github+json",
         "Authorization": f"token {token}",
     }
     
@@ -80,7 +80,7 @@ def set_topics(token, topics):
     url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/topics"
     
     headers = {
-        "Accept": "application/vnd.github.mercy-preview+json",
+        "Accept": "application/vnd.github+json",
         "Authorization": f"token {token}",
         "Content-Type": "application/json",
     }

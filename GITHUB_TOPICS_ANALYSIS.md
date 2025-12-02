@@ -207,7 +207,7 @@ export GITHUB_TOKEN="your_personal_access_token_here"
 **Add topics:**
 ```bash
 curl -X PUT \
-  -H "Accept: application/vnd.github.mercy-preview+json" \
+  -H "Accept: application/vnd.github+json" \
   -H "Authorization: token $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{
@@ -239,7 +239,7 @@ curl -X PUT \
 
 **Get current topics:**
 ```bash
-curl -H "Accept: application/vnd.github.mercy-preview+json" \
+curl -H "Accept: application/vnd.github+json" \
   -H "Authorization: token $GITHUB_TOKEN" \
   https://api.github.com/repos/Baneeishaque/Python-TUI-Scripts/topics
 ```
@@ -350,7 +350,7 @@ export GITHUB_TOKEN="your_token_here"
 
 # Add topics
 curl -X PUT \
-  -H "Accept: application/vnd.github.mercy-preview+json" \
+  -H "Accept: application/vnd.github+json" \
   -H "Authorization: token $GITHUB_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"names":["python","python-scripts","automation","cli-tools","utilities","pillow","google-keep","gkeepapi","google-oauth","homebrew","docker","vagrant","azure-pipelines","ci-cd","developer-tools","scripts","python3","image-processing","google-api","devops"]}' \

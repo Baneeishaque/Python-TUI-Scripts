@@ -162,7 +162,7 @@ gh api /repos/Baneeishaque/Python-TUI-Scripts/topics
 2. **Add topics:**
    ```bash
    curl -X PUT \
-     -H "Accept: application/vnd.github.mercy-preview+json" \
+     -H "Accept: application/vnd.github+json" \
      -H "Authorization: token $GITHUB_TOKEN" \
      -H "Content-Type: application/json" \
      -d '{
@@ -194,7 +194,7 @@ gh api /repos/Baneeishaque/Python-TUI-Scripts/topics
 
 3. **View topics (with jq for formatting):**
    ```bash
-   curl -H "Accept: application/vnd.github.mercy-preview+json" \
+   curl -H "Accept: application/vnd.github+json" \
      -H "Authorization: token $GITHUB_TOKEN" \
      https://api.github.com/repos/Baneeishaque/Python-TUI-Scripts/topics | jq
    ```
